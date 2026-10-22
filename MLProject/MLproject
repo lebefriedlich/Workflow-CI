@@ -1,0 +1,9 @@
+name: heart-disease-classification-project
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_dir: {type: str, default: "heart_disease_preprocessing"}
+    command: "python modelling.py --data_dir {data_dir}"
